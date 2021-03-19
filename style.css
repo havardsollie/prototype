@@ -4,7 +4,7 @@
 }
 
 header{
-    background-image:linear-gradient(rgba(59, 58, 58, 0.5),rgba(119, 117, 117, 0.5)), url(../website/images/cinema.jpg);
+    background-image:linear-gradient(rgba(119, 119, 119, 0.5),rgba(119, 117, 117, 0.5)), url(../website/images/cinema.jpg);
     height: 100vh; 
     background-size: cover;
     background-position: center;
@@ -17,21 +17,22 @@ ul{
     list-style-type: none;
     margin-top: 5px;
     max-width: 100%;
+    box-shadow: 0 10px rgba(0,0,0,0.5);
 }
 
-ul {list-style-type:none;}
-ul li {width:100px;float:left;}
-@media screen and (max-width:600px) {
-    ul li#three {float:none;}
-    ul li#four {float:left;}
-}
 
 ul li{
+    width:100px;float:left;
     display: inline;
 }
+@media screen and (max-width:600px) {
+    
+}
+
 
 ul  li  a{
     color: #ffffff;
+    text-decoration: none;
     background-color: transparent;
     transition: 0.5s ease;
 }
@@ -44,6 +45,7 @@ ul li a:hover{
 ul li.active a{
     color: #000000;
 }
+
 .logo img{
     float: left;
     width: 900px;
@@ -76,3 +78,4 @@ ul li.active a{
     background-color: #fff;
     color: #000;
 }
+

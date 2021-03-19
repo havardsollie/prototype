@@ -10,30 +10,19 @@ header{
     background-position: center;
 }
 
-.container{
-    max-width: 1600px;
+.profile-card{
+    width: 400px;
     margin: auto;
-    overflow: auto;
+    box-shadow: 0 2px 4px 10px 0 rgba(0,0,0,0.5);
 }
 
-.gallery{
-    margin: 15px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 360px;
-    margin-top: 100px;
+.image.container{
+    margin-top: 5%;
+    top: 50%;
+    height: 800px;
 }
 
-.gallery img{
-    width: 100%;
-    height: auto;
-    height: 5cm;
-}
 
-.des{
-    padding: 10px;
-    text-align: center;
-}
 
 @media only screen and (max-width: 700px){
     .container{
@@ -55,7 +44,6 @@ ul{
     list-style-type: none;
     margin-top: 5px;
     max-width: 100%;
-    box-shadow: 0 10px rgba(0,0,0,0.5);
 }
 
 ul {list-style-type:none;}

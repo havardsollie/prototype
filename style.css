@@ -4,11 +4,10 @@
 }
 
 header{
-    background-image:linear-gradient(rgba(119, 119, 119, 0.5),rgba(119, 117, 117, 0.5)), 
-    url(../website/images/cinema.jpg);
-    height: 100vh; 
+    background-image:url(../website/images/cinema.jpg);
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 
 ul{

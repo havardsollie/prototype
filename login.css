@@ -85,58 +85,17 @@
     grid-area: under3;
     background: indianred; 
 }
-  
-
-ul{
-    position: absolute;
-    top: 5%;
-    left: 35%;
-    list-style-type: none;
-    margin-top: 5px;
-    max-width: 100%;
-    border: 1px solid #fff;
-    background-color: #4B396F;
-    margin: 1px 10px;
-    color: #fff;
-    
-}
-
-
-ul li{
-    width:100px;float:left;
-    display: inline;
-}
-@media screen and (max-width:600px) {
-    
-}
-
-
-ul  li  a{
-    color: #ffffff;
-    text-decoration: none;
-    background-color: transparent;
-    transition: 0.5s ease;
-}
-
-ul li a:hover{
-;
-    color: #000000;
-}
-
-ul li.active a{
-    color: #000000;
-}
 
 .logo{
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 29%;
 }
 
 
 .button{
     position: absolute;
-    top: 75%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -154,7 +113,31 @@ ul li.active a{
     color: #000;
 }
 
+input[type=text]:focus, input[type=password]:focus{
+    width: 100%;
+    padding: 25px;
+    line-height: 40px;
+    display: inline-block;
+    border: none;
+    position: absolute;
+    top: 15%;
+    left: 29%;
+}
 
+hr{
+    border: 1px solid #000000;
+    margin-bottom: 40px;
+}
 
-
-
+.logincontainer{
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    padding: 16px;
+    text-align: left;
+    line-height: 22px;
+    font-size: 10px;
+    border: 1px solid white;
+    color: white;
+    margin-top: 5px;
+}

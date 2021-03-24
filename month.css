@@ -5,18 +5,17 @@
 
 .grid-container {
     display: grid;
-    height: 100vh;
-    width: 100vw;
-    margin: 2rem
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
     gap: 0px 2px;
     grid-template-areas:
       "header header header"
-      "top1 top2 top3"
+      "top2 top2 top2"
       "main1 main2 main3"
       "under1 under2 under3"
       "footer footer footer";
+    height: 100vh;
+    width: 100vw;
 }
   
 .header{
@@ -45,7 +44,8 @@
     background-attachement:scroll;
     background-position:center;
     background-size: cover;
-    background-repeat:no-repeat; 
+    background-repeat:no-repeat;
+    margin-bottom: 40px; 
     
 }
   

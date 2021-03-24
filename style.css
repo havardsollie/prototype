@@ -1,16 +1,91 @@
 *{
+    font-family: Helvetica, Light, sans-serif;
     margin: auto;
-    font-family: Helvetica;
 }
 
-header{
-    background-image: url(../website/images/cinema.jpg);
-    opacity: 0.9;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(174, 143, 188);
+.body{
+    display: grid;
 }
+
+.top-container img{
+    -webkit-filter: blur(4px);
+    max-width: 1440px;
+    max-height: auto;
+
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    margin: 2rem
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header"
+      "top1 top2 top3"
+      "main1 main2 main3"
+      "under1 under2 under3"
+      "footer footer footer";
+  }
+  
+.header{
+    grid-area: header;
+    background: indigo 
+}
+  
+.footer{ 
+    grid-area: footer;
+    background: #000; 
+}
+  
+.top1{
+    grid-area: top1; 
+    background: red;
+    object-fit: cover;
+}
+  
+.top2{
+    grid-area: top2;
+    background: blue;
+    
+}
+  
+.top3{ 
+    grid-area: top3;
+    background: green; 
+}
+  
+.main1{ 
+    grid-area: main1;
+    background: seagreen; }
+  
+.main2{
+    grid-area: main2;
+    
+}
+  
+.main3{
+    grid-area: main3; 
+    background: purple;
+}
+  
+.under1{
+    grid-area: under1;
+    background: brown; 
+}
+  
+.under2{
+    grid-area: under2;
+    background: pink; 
+}
+  
+.under3{
+    grid-area: under3;
+    background: indianred; 
+}
+  
 
 ul{
     position: absolute;
@@ -19,7 +94,11 @@ ul{
     list-style-type: none;
     margin-top: 5px;
     max-width: 100%;
-    box-shadow: 0 10px rgba(0,0,0,0.5);
+    border: 1px solid #fff;
+    background-color: #4B396F;
+    margin: 1px 10px;
+    color: #fff;
+    
 }
 
 
@@ -48,18 +127,12 @@ ul li.active a{
     color: #000000;
 }
 
-.logo img{
-    float: left;
-    width: 900px;
-    height: 700px;
-    max-width: 100%;
+.logo{
+    position: absolute;
+    top: 20%;
+    left: 29%;
 }
 
-.main{
-    max-width: 860px;
-    margin: auto;
-    padding: none
-}
 
 .button{
     position: absolute;
@@ -80,4 +153,29 @@ ul li.active a{
     background-color: #fff;
     color: #000;
 }
+
+.action-page{
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+}
+
+hr{
+    border: 1px solid #4B396F;
+    margin-bottom: 25px;
+}
+
+.formcontainer{
+    padding: 16px;
+    position: absolute;
+    text-align: center;
+}
+
+
 

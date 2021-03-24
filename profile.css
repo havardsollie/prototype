@@ -1,40 +1,152 @@
 *{
-    margin: auto;
-    font-family: Helvetica;
+    font-family: Helvetica, Light, sans-serif;
+    margin: 0;
 }
 
-header{
-    background-color: #aa97cf;
-    height: 100vh; 
-    background-size: cover;
-    background-position: center;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.3fr 0.6fr 0.6fr;
+    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    gap: 0px 1px;
+    grid-template-areas:
+      "header header header"
+      "top1 top1 top1"
+      "main1 main2 main3"
+      "under1 under2 under3"
+      "footer footer footer";
+    height: 100vh;
+    width: 100vw;
+}
+  
+.header{
+    grid-area: header;
+    background: #4B396F 
+}
+  
+.footer{ 
+    grid-area: footer;
+    background: rgb(255, 255, 255);
+    background-image: url(../website/logo.png);
+    background-attachement:scroll;
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;  
+}
+  
+.top1{
+    grid-area: top1;
+    background-image: url(../website/Web1920-2.png);
+    background-attachement:scroll;
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    
+}
+  
+.top2{
+    grid-area: top2; 
+    
+}
+  
+.top3{ 
+    grid-area: top3;
+    
+}
+  
+.main1{ 
+    grid-area: main1;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 20px;
+    
+}
+ 
+.main1 .textbox{
+    background-position: contain;
 }
 
-.profile-card{
-    width: 400px;
-    margin: auto;
-    box-shadow: 0 2px 4px 10px 0 rgba(0,0,0,0.5);
+
+.main2{
+    grid-area: main2;
+    background-image: url(../website/images/horse.jpg);
+    margin-bottom: 15px;
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    border-radius: 80%; 
+    
+}
+  
+.main3{
+    grid-area: main3;
+    text-align: center;
+    margin-top: 70px;    
 }
 
-.image.container{
-    margin-top: 5%;
-    top: 50%;
-    height: 800px;
+.main3 i{
+    text-align: left;
+    margin-left: 9px;
+    font-size: 35px;
+    padding: 5px;
+}
+  
+.under1{
+    grid-area: under1;
+    background: rgb(197, 137, 24);
+    text-align: center; 
+    padding: 50px;
+    line-height: 30px;
 }
 
-
-
-@media only screen and (max-width: 700px){
-    .container{
-        width: 50%;
-        margin: 6px 0;
-    }
+.under1 i{
+    font-size: 30px;
+    position: absolute;
+    top: 75%;
+    left: 37%;
+}
+  
+.under2{
+    grid-area: under2;
+    background: #4B396F;
+    text-align: center;
+    word-spacing: 30px;
+    padding: 50px; 
+    color: white;
 }
 
-@media only screen and (max-width: 500px){
-    .container{
-        width: 100%;
-    }
+.under2 i{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.under2 em{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+  
+.under3{
+    grid-area: under3;
+    background: rgb(197, 137, 24);
+    text-align: center;
+    padding: 50px;
+    color: white; 
+}
+
+.under3 i{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.under3 em{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 ul{
@@ -44,18 +156,22 @@ ul{
     list-style-type: none;
     margin-top: 5px;
     max-width: 100%;
+    
+    background-color: #4B396F;
+    margin: 1px 10px;
+    color: #fff;
+    
 }
 
-ul {list-style-type:none;}
-ul li {width:100px;float:left;}
-@media screen and (max-width:600px) {
-    ul li#three {float:none;}
-    ul li#four {float:left;}
-}
 
 ul li{
+    width:100px;float:left;
     display: inline;
 }
+@media screen and (max-width:600px) {
+    
+}
+
 
 ul  li  a{
     color: #ffffff;
@@ -72,10 +188,17 @@ ul li a:hover{
 ul li.active a{
     color: #000000;
 }
-.logo img{
-    float: left;
-    width: 160px;
-    height: auto;
-    max-width: 100%;
+
+i{
+    
 }
 
+h1{
+    position: absolute;
+    top: 44%;
+    left: 83%;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width:600px)

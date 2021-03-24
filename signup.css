@@ -1,0 +1,178 @@
+*{
+    font-family: Helvetica, Light, sans-serif;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.4fr 1fr 2.2fr 0.4fr 0.4fr;
+    gap: 2px 2px;
+    grid-template-areas:
+      "header header header"
+      "top1 top2 top3"
+      "main1 main2 main3"
+      "under1 under2 under3"
+      "footer footer footer";
+    height: 100vh;
+    width: 100vw;
+}
+  
+.header{
+    grid-area: header;
+    background: #4B396F 
+}
+  
+.footer{ 
+    grid-area: footer;
+    background: rgb(255, 255, 255);
+    background-image: url(../website/logo.png);
+    background-attachement:scroll;
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;  
+}
+  
+.top1{
+    grid-area: top1;
+    background: coral; 
+    background-image: url(../website/watcher.png);
+    background-attachement:scroll;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+}
+  
+.top2{
+    grid-area: top2;
+    background: coral;
+    background-image: url(../website/producer.png);
+    background-attachement:scroll;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+     
+    
+}
+  
+.top3{ 
+    grid-area: top3;
+    background: rgb(255, 255, 255);
+}
+  
+.main1{ 
+    grid-area: main1;
+    background: coral;
+    
+}
+  
+.main2{
+    grid-area: main2;
+    background: coral;
+    
+}
+  
+.main3{
+    grid-area: main3; 
+    
+    
+}
+  
+.under1{
+    grid-area: under1;
+    background: #4B396F;
+    text-align: center;
+}
+
+.under1 button, .under2 button{
+    width: 30%;
+    height: 70%;
+    margin: 10px;
+    background: #4B396F;
+    border-color: coral;
+    cursor:pointer;
+    transition: .5s;
+    font-size: 20px;
+    color: #ffffff;
+}    
+    
+.under1 button:hover, .under2 button:hover{
+      border: white;
+      color: coral;
+      font-size: 20px;
+      transform:scale(0.9);
+}
+  
+.under2{
+    grid-area: under2;
+    background: #4B396F;
+    text-align: center;
+}
+  
+.under3{
+    grid-area: under3;
+    background: #4B396F;
+}
+  
+ul{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    list-style-type: none;
+    margin-top: 5px;
+    max-width: 100%;
+    
+    background-color: #4B396F;
+    margin: 1px 10px;
+    color: #fff;
+    
+}
+
+
+ul li{
+    width:100px;float:left;
+    display: inline;
+}
+@media screen and (max-width:600px) {
+    
+}
+
+
+ul  li  a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover{
+;
+    color: #000000;
+}
+
+.action-page{
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    width: 100%;
+    padding: 25px;
+    line-height: 40px;
+    display: inline-block;
+    border: none;
+}
+
+hr{
+    border: 1px solid #000000;
+    margin-bottom: 40px;
+}
+
+.formcontainer{
+    padding: 16px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 10px;
+}
+
+

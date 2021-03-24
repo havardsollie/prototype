@@ -10,7 +10,7 @@
     margin: 2rem
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
-    gap: 2px 2px;
+    gap: 0px 2px;
     grid-template-areas:
       "header header header"
       "top1 top2 top3"
@@ -41,10 +41,10 @@
   
 .top2{
     grid-area: top2;
-    background-image: url(../website/menu.png);
+    background-image: url(../website/moviesmonth.png);
     background-attachement:scroll;
     background-position:center;
-    background-size:contain;
+    background-size: cover;
     background-repeat:no-repeat; 
     
 }
@@ -56,7 +56,7 @@
   
 .main1{ 
     grid-area: main1;
-    background-image: url(../website/images/aircraft.jpg);
+    background-image: url(../website/images/influencer.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -65,7 +65,7 @@
   
 .main2{
     grid-area: main2;
-    background-image: url(../website/images/landcape.jpg);
+    background-image: url(../website/images/sailboat.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -75,7 +75,7 @@
   
 .main3{
     grid-area: main3; 
-    background-image: url(../website/images/mountain-range.jpg);
+    background-image: url(../website/images/animal.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -85,29 +85,20 @@
   
 .under1{
     grid-area: under1;
-    background-image: url(../website/images/moon.jpg);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background: #4B396F;
+    text-align: center;
+    text-decoration: #ffffff;
+    
 }
   
 .under2{
     grid-area: under2;
-    background-image: url(../website/images/pandemic.jpg);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background: #4B396F;
 }
   
 .under3{
     grid-area: under3;
-    background-image: url(../website/images/child.jpg);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background: #4B396F;
 }
   
 
@@ -151,49 +142,37 @@ ul li.active a{
     color: #000000;
 }
 
-h1{
+.movietext1{
     position: absolute;
-    top: 60%;
-    left: 7%;
-    font-size: 20px;
-}
-
-h2{
-    position: absolute;
-    top: 60%;
-    left: 45%;
-    font-size: 20px;
-    color: #ffffff;  
-}
-
-h3{
-    position: absolute;
-    top: 60%;
-    left: 80%;
+    top: 67%;
+    left: 10%;
     font-size: 20px;
     color: #ffffff;
+    text-align: center;
+    line-height: 45px;
 }
 
-h4{
+.movietext2{
     position: absolute;
-    top: 88%;
-    left: 7%;
+    top: 67%;
+    left: 43%;
     font-size: 20px;
     color: #ffffff;
+    text-align: center;
+    line-height: 45px;
 }
 
-h5{
+.movietext3{
     position: absolute;
-    top: 88%;
-    left: 45%;
+    top: 67%;
+    left: 78%;
     font-size: 20px;
     color: #ffffff;
+    text-align: center;
+    line-height: 45px;
 }
 
-h6{
-    position: absolute;
-    top: 88%;
-    left: 80%;
-    font-size: 20px;
-    color: #000000;
+.movietext1 > em, .movietext2 > em, .movietext3 > em{
+    color: coral;
+    font-size: 30px;
 }

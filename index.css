@@ -7,24 +7,15 @@
     display: grid;
 }
 
-.top-container img{
-    -webkit-filter: blur(4px);
-    max-width: 1440px;
-    max-height: auto;
-
-}
-
 .grid-container {
     display: grid;
     height: 100vh;
-    width: 100vw;
-    margin: 2rem
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 1.4fr 1.4fr 1.4fr 0.4fr;
     gap: 0px 0px;
     grid-template-areas:
       "header header header"
-      "top1 top2 top3"
+      "top1 top1 top1"
       "main1 main2 main3"
       "under1 under2 under3"
       "footer footer footer";
@@ -32,7 +23,37 @@
   
 .header{
     grid-area: header;
-    background: indigo 
+}
+
+.header ul{
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    
+}
+
+.header ul li{
+    display: inline;
+    text-align: center;
+    padding: 30px;
+    color: black;
+}
+
+
+.header ul  li  a{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+.header ul li a:hover{
+;
+    color: #4B396F;
+}
+
+.header ul li.active a{
+    color: #000000;
 }
   
 .footer{ 
@@ -42,8 +63,12 @@
   
 .top1{
     grid-area: top1; 
-    background: red;
-    object-fit: cover;
+}
+
+.top1 img{
+    -webkit-filter: blur(8px);
+    max-width: 1440px;
+    max-height: auto;; 
 }
   
 .top2{
@@ -62,9 +87,18 @@
     background: seagreen; }
   
 .main2{
-    grid-area: main2;
-    
+    grid-area: main2;   
 }
+
+.main2 img{
+    height: 500px;
+    width: auto;
+    position: absolute;
+    top: 100px;
+    left: 280px;
+}
+
+@media
   
 .main3{
     grid-area: main3; 
@@ -84,53 +118,6 @@
 .under3{
     grid-area: under3;
     background: indianred; 
-}
-  
-
-ul{
-    position: absolute;
-    top: 5%;
-    left: 35%;
-    list-style-type: none;
-    margin-top: 5px;
-    max-width: 100%;
-    border: 1px solid #fff;
-    background-color: #4B396F;
-    margin: 1px 10px;
-    color: #fff;
-    
-}
-
-
-ul li{
-    width:100px;float:left;
-    display: inline;
-}
-@media screen and (max-width:600px) {
-    
-}
-
-
-ul  li  a{
-    color: #ffffff;
-    text-decoration: none;
-    background-color: transparent;
-    transition: 0.5s ease;
-}
-
-ul li a:hover{
-;
-    color: #000000;
-}
-
-ul li.active a{
-    color: #000000;
-}
-
-.logo{
-    position: absolute;
-    top: 20%;
-    left: 29%;
 }
 
 
@@ -153,6 +140,14 @@ ul li.active a{
     background-color: #fff;
     color: #000;
 }
+
+@media only screen and (max-width: 320px) {
+
+    body { 
+       font-size: 2em; 
+    }
+ 
+ }
 
 
 

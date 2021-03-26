@@ -5,7 +5,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1.3fr 0.6fr 0.6fr;
+    grid-template-columns: 0.6fr 0.6fr 1.3fr;
     grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
     gap: 0px 1px;
     grid-template-areas:
@@ -86,14 +86,8 @@
   
 .main1{ 
     grid-area: main1;
-    text-align: center;
-    letter-spacing: 2px;
-    word-spacing: 1px;
-    line-height: 20px;
-    padding: 20px;
     
 }
-
 
 .main2{
     grid-area: main2;
@@ -109,14 +103,16 @@
 .main3{
     grid-area: main3;
     text-align: center;
-    margin-top: 70px;    
+    font-size: 20px;    
 }
 
-.main3 i{
-    text-align: center;
-    margin-left: 9px;
-    font-size: 35px;
-    padding: 5px;
+.main3 ul.list{
+    list-style-type: square;
+    line-height: 40px;
+}
+
+.main3 ul.list a{
+    color: black;
 }
   
 .under1{
@@ -128,8 +124,10 @@
 }
 
 .under1 i{
-    font-size: 30px;
-    text-align: left;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
 }
   
 .under2{
@@ -156,10 +154,11 @@
   
 .under3{
     grid-area: under3;
-    background: rgb(197, 137, 24);
+    background:  rgb(197, 137, 24); 
     text-align: center;
-    padding: 50px;
-    color: white; 
+    word-spacing: 30px;
+    padding: 50px; 
+    color: white;
 }
 
 .under3 i{
@@ -175,10 +174,16 @@
     font-size: 20px;
 }
 
-@media only screen and (max-width: 320px) {
+i{
+    
+}
 
-    body { 
-       font-size: 2em; 
-    }
- 
- }
+h1{
+    position: absolute;
+    top: 44%;
+    left: 83%;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width:600px)

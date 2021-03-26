@@ -6,8 +6,6 @@
 .grid-container {
     display: grid;
     height: 100vh;
-    width: 100vw;
-    margin: 2rem
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
     gap: 2px 2px;
@@ -22,6 +20,37 @@
 .header{
     grid-area: header;
     background: #4B396F 
+}
+
+.header ul{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    
+}
+
+
+.header ul li{
+    display: inline;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.header ul  li  a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+.header ul li a:hover{
+;
+    color: #000000;
+}
+
+.header ul li.active a{
+    color: #000000;
 }
   
 .footer{ 
@@ -61,8 +90,21 @@
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
+    text-align: left;
 }
-  
+
+.main1 a, .main2 a, .main3 a{
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}
+
+.under1 a, .under2 a, .under3 a{
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}
+
 .main2{
     grid-area: main2;
     background-image: url(../website/images/landcape.jpg);
@@ -108,92 +150,4 @@
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-}
-  
-
-ul{
-    position: absolute;
-    top: 5%;
-    left: 35%;
-    list-style-type: none;
-    margin-top: 5px;
-    max-width: 100%;
-    
-    background-color: #4B396F;
-    margin: 1px 10px;
-    color: #fff;
-    
-}
-
-
-ul li{
-    width:100px;float:left;
-    display: inline;
-}
-@media screen and (max-width:600px) {
-    
-}
-
-
-ul  li  a{
-    color: #ffffff;
-    text-decoration: none;
-    background-color: transparent;
-    transition: 0.5s ease;
-}
-
-ul li a:hover{
-;
-    color: #000000;
-}
-
-ul li.active a{
-    color: #000000;
-}
-
-h1{
-    position: absolute;
-    top: 60%;
-    left: 7%;
-    font-size: 20px;
-}
-
-h2{
-    position: absolute;
-    top: 60%;
-    left: 45%;
-    font-size: 20px;
-    color: #ffffff;  
-}
-
-h3{
-    position: absolute;
-    top: 60%;
-    left: 80%;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-h4{
-    position: absolute;
-    top: 88%;
-    left: 7%;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-h5{
-    position: absolute;
-    top: 88%;
-    left: 45%;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-h6{
-    position: absolute;
-    top: 88%;
-    left: 80%;
-    font-size: 20px;
-    color: #000000;
 }

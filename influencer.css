@@ -7,11 +7,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
-    gap: 0px 2px;
+    gap: 1px 0px;
     grid-template-areas:
       "header header header"
-      "top2 top2 top2"
-      "main1 main2 main3"
+      "main1 main1 main1"
+      "main1 main1 main1"
       "under1 under2 under3"
       "footer footer footer";
     height: 100vh;
@@ -71,18 +71,11 @@
   
 .top2{
     grid-area: top2;
-    background-image: url(../website/moviesmonth.png);
-    background-attachement:scroll;
-    background-position:center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    margin-bottom: 40px; 
-    
 }
   
 .top3{ 
     grid-area: top3;
-    background: rgb(255, 255, 255);
+    
 }
   
 .main1{ 
@@ -96,21 +89,11 @@
   
 .main2{
     grid-area: main2;
-    background-image: url(../website/images/sailboat.jpg);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
     
 }
   
 .main3{
     grid-area: main3; 
-    background-image: url(../website/images/animal.jpg);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
     
 }
   
@@ -118,33 +101,47 @@
     grid-area: under1;
     background: #4B396F;
     text-align: center;
-    text-decoration: #ffffff;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 45px;
-    
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    line-height: 25px; 
 }
   
 .under2{
     grid-area: under2;
     background: #4B396F;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 15px;
     color: #ffffff;
     text-align: center;
-    line-height: 45px;
+    line-height: 35px;
+}
+
+.under2 h1{
+    font-size: 30px;
+    color: coral;
 }
   
 .under3{
     grid-area: under3;
     background: #4B396F;
-    font-size: 20px;
-    color: #ffffff;
     text-align: center;
-    line-height: 45px;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    line-height: 35px;
 }
 
-.under1 > a em, .under2 > a em, .under3 > a em{
-    color: coral;
-    font-size: 30px;
+.under3 > .btn{
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease;
+    margin-bottom: 10px;
 }
+
+.under3 > .btn:hover{
+    background-color: #fff;
+    color: #000;
+

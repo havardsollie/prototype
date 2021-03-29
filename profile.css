@@ -57,7 +57,7 @@
 .footer{ 
     grid-area: footer;
     background: rgb(255, 255, 255);
-    background-image: url(/logo.png);
+    background-image: url(./logo.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
@@ -66,7 +66,7 @@
   
 .top1{
     grid-area: top1;
-    background-image: url(/Web1920-2.png);
+    background-image: url(./Web1920-2.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
@@ -97,7 +97,7 @@
 
 .main2{
     grid-area: main2;
-    background-image: url(/images/horse.jpg);
+    background-image: url(./images/horse.jpg);
     margin-bottom: 15px;
     background-position:center;
     background-size:contain;

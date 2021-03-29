@@ -53,7 +53,7 @@
 .footer{ 
     grid-area: footer;
     background: rgb(255, 255, 255);
-    background-image: url(/logo.png);
+    background-image: url(./logo.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
@@ -63,7 +63,7 @@
 .top1{
     grid-area: top1;
     background: coral; 
-    background-image: url(/watcher.png);
+    background-image: url(./watcher.png);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -74,7 +74,7 @@
 .top2{
     grid-area: top2;
     background: coral;
-    background-image: url(/producer.png);
+    background-image: url(./producer.png);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;

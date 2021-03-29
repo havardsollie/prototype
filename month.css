@@ -57,7 +57,7 @@
 .footer{ 
     grid-area: footer;
     background: rgb(255, 255, 255);
-    background-image: url(/logo.png);
+    background-image: url(./logo.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
@@ -71,7 +71,7 @@
   
 .top2{
     grid-area: top2;
-    background-image: url(/moviesmonth.png);
+    background-image: url(./moviesmonth.png);
     background-attachement:scroll;
     background-position:center;
     background-size: cover;
@@ -87,7 +87,7 @@
   
 .main1{ 
     grid-area: main1;
-    background-image: url(/images/influencer.jpg);
+    background-image: url(./images/influencer.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -96,7 +96,7 @@
   
 .main2{
     grid-area: main2;
-    background-image: url(/images/sailboat.jpg);
+    background-image: url(./images/sailboat.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -106,7 +106,7 @@
   
 .main3{
     grid-area: main3; 
-    background-image: url(/images/animal.jpg);
+    background-image: url(./images/animal.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;

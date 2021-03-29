@@ -85,7 +85,7 @@
   
 .main1{ 
     grid-area: main1;
-    background-image: url(../website/images/aircraft.jpg);
+    background-image: url(/images/aircraft.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;

@@ -48,7 +48,6 @@
 }
 
 .header ul li a:hover{
-;
     color: #4B396F;
 }
 
@@ -97,12 +96,9 @@
     top: 100px;
     left: 280px;
 }
-
-@media
   
 .main3{
     grid-area: main3; 
-    background: purple;
 }
   
 .under1{

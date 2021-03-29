@@ -56,7 +56,7 @@
 .footer{ 
     grid-area: footer;
     background: rgb(255, 255, 255);
-    background-image: url(../website/logo.png);
+    background-image: url(website/logo.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;

@@ -79,7 +79,7 @@
   
 .main1{ 
     grid-area: main1;
-    background-image: url(../website/images/influencer.jpg);
+    background-image: url(/images/influencer.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;

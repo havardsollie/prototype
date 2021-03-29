@@ -56,7 +56,7 @@
 .footer{ 
     grid-area: footer;
     background: rgb(255, 255, 255);
-    background-image: url(./website/logo.png);
+    background-image: url(/logo.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
@@ -70,7 +70,7 @@
   
 .top2{
     grid-area: top2;
-    background-image: url(../website/menu.png);
+    background-image: url(/menu.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
@@ -107,7 +107,7 @@
 
 .main2{
     grid-area: main2;
-    background-image: url(../website/images/landcape.jpg);
+    background-image: url(/images/landcape.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -117,7 +117,7 @@
   
 .main3{
     grid-area: main3; 
-    background-image: url(../website/images/mountain-range.jpg);
+    background-image: url(/images/mountain-range.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -127,7 +127,7 @@
   
 .under1{
     grid-area: under1;
-    background-image: url(../website/images/moon.jpg);
+    background-image: url(/images/moon.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -136,7 +136,7 @@
   
 .under2{
     grid-area: under2;
-    background-image: url(../website/images/pandemic.jpg);
+    background-image: url(/images/pandemic.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
@@ -145,7 +145,7 @@
   
 .under3{
     grid-area: under3;
-    background-image: url(../website/images/child.jpg);
+    background-image: url(/images/child.jpg);
     background-attachement:scroll;
     background-position:center;
     background-size:cover;

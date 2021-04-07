@@ -26,8 +26,7 @@
 .header ul{
     text-align: center;
     margin-top: 20px;
-    color: #fff;
-    
+    color: #fff;   
 }
 
 
@@ -66,7 +65,6 @@
   
 .top1{
     grid-area: top1; 
-
 }
   
 .top2{
@@ -74,8 +72,7 @@
 }
   
 .top3{ 
-    grid-area: top3;
-    
+    grid-area: top3;  
 }
   
 .main1{ 
@@ -88,13 +85,11 @@
 }
   
 .main2{
-    grid-area: main2;
-    
+    grid-area: main2;  
 }
   
 .main3{
-    grid-area: main3; 
-    
+    grid-area: main3;    
 }
   
 .under1{
@@ -104,7 +99,7 @@
     padding: 15px;
     color: white;
     font-size: 15px;
-    line-height: 25px; 
+    line-height: 27px; 
 }
   
 .under2{
@@ -135,10 +130,12 @@
 .under3 > .btn{
     border: 1px solid #fff;
     padding: 10px 10px;
+    position: absolute;
+    top: 80%;
+    left: 77%;
     color: #fff;
     text-decoration: none;
     transition: 0.5s ease;
-    margin-bottom: 10px;
 }
 
 .under3 > .btn:hover{

@@ -79,9 +79,7 @@
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
-    background-repeat:no-repeat;
-     
-    
+    background-repeat:no-repeat;     
 }
   
 .top3{ 
@@ -91,20 +89,16 @@
   
 .main1{ 
     grid-area: main1;
-    background: coral;
-    
+    background: coral;   
 }
   
 .main2{
     grid-area: main2;
-    background: coral;
-    
+    background: coral;  
 }
   
 .main3{
-    grid-area: main3; 
-    
-    
+    grid-area: main3;    
 }
   
 .under1{

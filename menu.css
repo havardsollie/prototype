@@ -25,8 +25,7 @@
 .header ul{
     text-align: center;
     margin-top: 20px;
-    color: #fff;
-    
+    color: #fff;   
 }
 
 
@@ -46,7 +45,6 @@
 }
 
 .header ul li a:hover{
-
     color: #000000;
 }
 
@@ -75,8 +73,7 @@
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
-    background-repeat:no-repeat; 
-    
+    background-repeat:no-repeat;    
 }
   
 .top3{ 
@@ -112,8 +109,7 @@
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
-    background-repeat:no-repeat;
-    
+    background-repeat:no-repeat;  
 }
   
 .main3{
@@ -122,8 +118,7 @@
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
-    background-repeat:no-repeat;
-    
+    background-repeat:no-repeat;   
 }
   
 .under1{

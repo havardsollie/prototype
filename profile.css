@@ -26,8 +26,7 @@
 .header ul{
     text-align: center;
     margin-top: 20px;
-    color: #fff;
-    
+    color: #fff;  
 }
 
 
@@ -71,18 +70,15 @@
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
-    background-repeat:no-repeat;
-    
+    background-repeat:no-repeat;   
 }
   
 .top2{
-    grid-area: top2; 
-    
+    grid-area: top2;    
 }
   
 .top3{ 
-    grid-area: top3;
-    
+    grid-area: top3;   
 }
   
 .main1{ 
@@ -91,8 +87,7 @@
     letter-spacing: 2px;
     word-spacing: 1px;
     line-height: 20px;
-    padding: 20px;
-    
+    padding: 20px;   
 }
 
 

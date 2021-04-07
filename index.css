@@ -1,55 +1,52 @@
 *{
     font-family: Helvetica, Light, sans-serif;
-    margin: auto;
-}
-
-.body{
-    display: grid;
+    margin: 0;
 }
 
 .grid-container {
     display: grid;
-    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
     gap: 0px 0px;
     grid-template-areas:
       "header header header"
-      "top1 top1 top1"
-      "main1 main2 main3"
-      "under1 under2 under3"
-      "footer footer footer";
-  }
+      "main1 main1 main1"
+      "main1 main1 main1"
+      "main1 main1 main1"
+      "main1 main1 main1";
+    height: 100vh;
+    width: 100vw;
+}
   
 .header{
     grid-area: header;
+    background: #4B396F 
 }
 
 .header ul{
     text-align: center;
     margin-top: 20px;
-    color: black;
-    
+    color: #fff;    
 }
+
 
 .header ul li{
     display: inline;
     text-align: center;
     padding: 30px;
-    color: black;
     font-size: 15px;
 }
 
 
 .header ul  li  a{
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     background-color: transparent;
     transition: 0.5s ease;
 }
 
 .header ul li a:hover{
-    color: #4B396F;
+    color: #000000;
 }
 
 .header ul li.active a{
@@ -58,44 +55,32 @@
   
 .footer{ 
     grid-area: footer;
-    background: #000; 
-}
+}    
   
 .top1{
     grid-area: top1; 
 }
-
-.top1 img{
-    -webkit-filter: blur(8px);
-    max-width: 1440px;
-    max-height: auto;; 
-}
   
 .top2{
     grid-area: top2;
-    background: blue;
-    
 }
   
 .top3{ 
-    grid-area: top3;
-    background: green; 
+    grid-area: top3;   
 }
   
 .main1{ 
     grid-area: main1;
-    background: seagreen; }
+    background-image: url(./logo3.png), url(./images/cinema.jpg);
+    -webkit-filter: blur(0px);
+    background-blend-mode: inherit;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, center;
+    background-size: contain, cover;
+}
   
 .main2{
-    grid-area: main2;   
-}
-
-.main2 img{
-    height: 500px;
-    width: auto;
-    position: absolute;
-    top: 100px;
-    left: 280px;
+    grid-area: main2;
 }
   
 .main3{
@@ -104,23 +89,19 @@
   
 .under1{
     grid-area: under1;
-    background: brown; 
 }
   
 .under2{
     grid-area: under2;
-    background: pink; 
 }
   
 .under3{
     grid-area: under3;
-    background: indianred; 
 }
-
 
 .button{
     position: absolute;
-    top: 75%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -135,28 +116,5 @@
 
 .btn:hover{
     background-color: #fff;
-    color: #000;
+    color: black;
 }
-
-.logo img{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -120%);
-    height: 350px;
-    width: auto;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .logo img { 
-       height: 300px;
-       width: auto;
-    }
- 
- }
-
-
-
-
-

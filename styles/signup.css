@@ -53,38 +53,29 @@
   
 .footer{ 
     grid-area: footer;
-    background: rgb(255, 255, 255);
-    background-image: url(./logo.png);
+    background-image: url(/images/logo.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
     background-repeat:no-repeat;  
 }
+
+.top1, .top2{
+    background: coral;
+    background-attachement:scroll;
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
   
 .top1{
     grid-area: top1;
-    background: coral; 
-    background-image: url(./watcher.png);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-
+    background-image: url(/images/watcher.png);
 }
   
 .top2{
     grid-area: top2;
-    background: coral;
-    background-image: url(./producer.png);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;     
-}
-  
-.top3{ 
-    grid-area: top3;
-    background: rgb(255, 255, 255);
+    background-image: url(/images/producer.png);     
 }
   
 .main1{ 
@@ -96,15 +87,14 @@
     grid-area: main2;
     background: coral;  
 }
-  
-.main3{
-    grid-area: main3;    
+
+.under1, .under2{
+    background: #4B396F;
+    text-align: center;
 }
   
 .under1{
     grid-area: under1;
-    background: #4B396F;
-    text-align: center;
 }
 
 .under1 button, .under2 button{
@@ -128,13 +118,6 @@
   
 .under2{
     grid-area: under2;
-    background: #4B396F;
-    text-align: center;
-}
-  
-.under3{
-    grid-area: under3;
-    background: #4B396F;
 }
 
 .action-page{
@@ -150,7 +133,7 @@ input[type=text]:focus, input[type=password]:focus{
 }
 
 hr{
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     margin-bottom: 40px;
 }
 

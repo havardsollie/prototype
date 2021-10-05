@@ -12,8 +12,8 @@
       "header header header"
       "main1 main1 main1"
       "main1 main1 main1"
-      "main1 main1 main1"
-      "main1 main1 main1";
+      "under2 under2 under2"
+      "under2 under2 under2";
     height: 100vh;
     width: 100vw;
 }
@@ -45,116 +45,59 @@
     transition: 0.5s ease;
 }
 
-.header ul li a:hover{
+.header ul li a:hover, .header ul li.active a{
     color: #000000;
-}
-
-.header ul li.active a{
-    color: #000000;
-}
-  
-.footer{ 
-    grid-area: footer;
-}    
-  
-.top1{
-    grid-area: top1; 
-}
-  
-.top2{
-    grid-area: top2;
-}
-  
-.top3{ 
-    grid-area: top3;   
 }
   
 .main1{ 
     grid-area: main1;
-    background-image: url(./logo3.png), url(./images/cinema.jpg);
+    background-image: url(/images/logo3.png), url(/images/cinema.jpg);
     -webkit-filter: blur(1px);
     background-blend-mode: inherit;
     background-repeat: no-repeat, no-repeat;
     background-position: top, center;
     background-size: contain, cover;
 }
-  
-.main2{
-    grid-area: main2;
-}
-  
-.main3{
-    grid-area: main3; 
-}
-  
-.under1{
-    grid-area: under1;
-}
-  
+
 .under2{
     grid-area: under2;
-}
-  
-.under3{
-    grid-area: under3;
 }
 
 .button{
     position: absolute;
-    top: 89%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .btn{
-    border: 1px solid #fff;
+    border: 1px solid black;
     padding: 10px 10px;
-    color: #fff;
+    color: black;
     text-decoration: none;
     transition: 0.5s ease;
 }
 
 .btn:hover{
-    background-color: #fff;
-    color: #000;
-}
-
-input[type=text]:focus, input[type=password]:focus{
-    width: 100%;
-    padding: 25px;
-    line-height: 40px;
-    display: inline-block;
-    border: none;
-    position: absolute;
-    top: 15%;
-    left: 29%;
+    background-color: #4B396F;
+    color: white;
 }
 
 hr{
-    border: 1px solid #ffffff;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .logincontainer{
-    position: absolute;
-    top: 70%;
-    left: 41%;
-    padding: 16px;
-    text-align: left;
+    text-align: center;
     line-height: 22px;
     font-size: 10px;
-    border: 1px solid white;
     color: white;
-    margin-top: 5px;
+    margin-top: 20px;
+    background-color: #4B396F;
 }
 
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
 
-    .logincontainer { 
-       position: absolute;
-       top: 70%;
-       left: 25%;
-    }
- 
- }
+}

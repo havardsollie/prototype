@@ -53,11 +53,12 @@ function emailValidation(emailAlt) {
     return patternMatches;
 }
 
-function pwdValidation() {
-    if (repeatAlt != passwordAlt) {
-        return true;
+function pwdCheck() {
+    if (passwordAlt.value == repeatAlt.value) {
+        repeatAltError.style.display = "none";
+        document.querySelector("submit").disabled = false;
     } else {
-        return false;
+        repeatAltError.style.display = "block";
+        document.querySelector("submit").disabled = true;
     }
-}
-
+} 

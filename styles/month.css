@@ -24,16 +24,13 @@
 }
 
 .header ul{
-    text-align: center;
-    margin-top: 20px;
-    color: #fff;  
+    display: none;    
 }
 
 
 .header ul li{
-    display: inline;
+    display: block;
     text-align: center;
-    padding: 30px;
     font-size: 15px;
 }
 
@@ -45,19 +42,29 @@
     transition: 0.5s ease;
 }
 
-.header ul li a:hover{
-
+.header ul li a:hover, .header ul li.active a{
     color: #000000;
 }
 
-.header ul li.active a{
-    color: #000000;
+#hamburger-menu{
+   display: none;
+}
+
+#hamburger-menu:checked ~ ul{
+   display: block;
+   text-align: left;
+   line-height: 40px;
+}
+
+i{
+    padding: 10px 10px;
+    font-size: 3em;
+    color: #ffffff;
 }
   
 .footer{ 
     grid-area: footer;
-    background: rgb(255, 255, 255);
-    background-image: url(./logo.png);
+    background-image: url(/images/logo.png);
     background-attachement:scroll;
     background-position:center;
     background-size:contain;
@@ -70,11 +77,7 @@
   
 .top2{
     grid-area: top2;
-    background-image: url(./moviesmonth.png);
-    background-attachement:scroll;
-    background-position:center;
-    background-size: cover;
-    background-repeat:no-repeat;
+    background-image: url(/images/moviesmonth.png);
     margin-bottom: 40px; 
     
 }
@@ -83,56 +86,30 @@
     grid-area: top3;
     background: rgb(255, 255, 255);
 }
-  
-.main1{ 
-    grid-area: main1;
-    background-image: url(./images/influencer.jpg);
+
+.top2, .main1, .main2, .main3{
     background-attachement:scroll;
     background-position:center;
     background-size:cover;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; 
+}
+  
+.main1{ 
+    grid-area: main1;
+    background-image: url(/images/influencer.jpg);
 }
   
 .main2{
     grid-area: main2;
-    background-image: url(./images/sailboat.jpg);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;   
+    background-image: url(/images/sailboat.jpg);  
 }
   
 .main3{
     grid-area: main3; 
-    background-image: url(./images/animal.jpg);
-    background-attachement:scroll;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;   
+    background-image: url(/images/animal.jpg);  
 }
   
-.under1{
-    grid-area: under1;
-    background: #4B396F;
-    text-align: center;
-    text-decoration: #ffffff;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 45px;   
-}
-  
-.under2{
-    grid-area: under2;
-    background: #4B396F;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 45px;
-}
-  
-.under3{
-    grid-area: under3;
+.under1, .under2, .under3{
     background: #4B396F;
     font-size: 20px;
     color: #ffffff;
@@ -140,7 +117,54 @@
     line-height: 45px;
 }
 
-.under1 > a em, .under2 > a em, .under3 > a em{
+.under1{
+    grid-area: under1;
+}
+  
+.under2{
+    grid-area: under2;
+}
+  
+.under3{
+    grid-area: under3;
+}
+
+.under1 em, .under2 em, .under3 em{
     color: coral;
     font-size: 30px;
+    text-decoration: none;
+}
+
+/* pad */
+@media screen and (min-width: 960px){
+
+.header ul li{
+    display: inline;
+    text-align: center;
+    font-size: 15px;
+    padding: 40px;
+}
+
+.under1 em, .under2 em, .under3 em{
+    color: coral;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.under1, .under2, .under3{
+    font-size: 2rem;
+    line-height: 70px;
+}
+
+}
+
+@media screen and (min-width: 1200px){
+
+.header ul li{
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+    padding: 100px;
+}
+
 }

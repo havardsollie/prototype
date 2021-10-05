@@ -2,36 +2,46 @@
 <html>
   <head>
     <title>Menu</title>
-    <link rel="stylesheet"  type="text/css" href="menu.css"> 
+    <link rel="stylesheet"  type="text/css" href="styles/menu.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+      (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2605300,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script> 
   </head>
   <body>
     <header>
-        
-      
     </header>
    
     <main>
-       
-              
-      <div class="grid-container">
+       <div class="grid-container">
         <div class="header">
-          <nav> 
+          <nav>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+              <input type="checkbox" id="hamburger-menu">   
             <ul>
               <li><a href="index.html">Home</a></li>
               <li class="active"><a href="menu.html">Menu</a></li>
               <li><a href="profile.html">Producer</a></li>
-              <li><a href="profile2.html">Watcher</a></li>
-              
+              <li><a href="profile2.html">Watcher</a></li> 
             </ul>
           </nav>
         </div>
+
         <div class="footer"></div>
         <div class="top1"></div>
         <div class="top2"></div>
         <div class="top3"></div>
         <div class="main1">
-          <a href="month.html">MOVIES OF THE MONTH</a>
+          <a href="month.html"><b>MOVIES OF THE MONTH</b></a>
         </div>
         <div class="main2">
           <a href="2.html">LOW BUDGET</a>

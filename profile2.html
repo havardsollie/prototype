@@ -2,9 +2,20 @@
 <html>
   <head>
     <title>Watcher account</title>
-    <link rel="stylesheet"  type="text/css" href="profile2.css">
+    <link rel="stylesheet"  type="text/css" href="styles/profile2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+      (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2605300,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script> 
   </head>
   <body>
     <header>
@@ -17,7 +28,9 @@
               
       <div class="grid-container">
         <div class="header">
-            <nav> 
+            <nav>
+              <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+              <input type="checkbox" id="hamburger-menu">   
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="menu.html">Menu</a></li>
@@ -51,7 +64,7 @@
           
           <i class="far fa-envelope"></i>
         </div>
-        <div class="under2"></div>
+        
         <div class="under3">
             <em>SOCIALS</em>
           <hr>

@@ -77,51 +77,22 @@
     grid-area: top2;
     background-image: url(/images/producer.png);     
 }
+
+.main1, .main2{
+    background: #4B396F;
+}
   
 .main1{ 
-    grid-area: main1;
-    background: coral;   
+    grid-area: main1;   
 }
   
 .main2{
-    grid-area: main2;
-    background: coral;  
+    grid-area: main2;  
 }
 
 .under1, .under2{
-    background: #4B396F;
+    background: coral;
     text-align: center;
-}
-  
-.under1{
-    grid-area: under1;
-}
-
-.under1 button, .under2 button{
-    width: 30%;
-    height: 70%;
-    margin: 10px;
-    background: #4B396F;
-    border-color: coral;
-    cursor:pointer;
-    transition: .5s;
-    font-size: 20px;
-    color: #ffffff;
-}    
-    
-.under1 button:hover, .under2 button:hover{
-      border: white;
-      color: coral;
-      font-size: 20px;
-      transform:scale(0.9);
-}
-  
-.under2{
-    grid-area: under2;
-}
-
-.action-page{
-    box-sizing: border-box;
 }
 
 input[type=text]:focus, input[type=password]:focus{
@@ -130,10 +101,11 @@ input[type=text]:focus, input[type=password]:focus{
     line-height: 40px;
     display: inline-block;
     border: none;
+    color: white;
 }
 
 hr{
-    border: 2px solid #000000;
+    border: 1px solid white;
     margin-bottom: 40px;
 }
 
@@ -142,6 +114,12 @@ hr{
     text-align: center;
     line-height: 22px;
     font-size: 10px;
+    color: white;
+}
+
+.submit-error{
+    display: none;
+    color: red;
 }
 
 

@@ -39,64 +39,90 @@
         <div class="top2"></div>
         <div class="top3"></div>
         <div class="main1">
-            <form action="action-page.php">
+            
                 <div class="formcontainer">
+                  <form id="signUpForm">
                     <h1>Please fill in this form.</h1>
                     <hr>
       
-                    <label for="full-name"><b>NAME</b></label>
-                    <input type="name" name="full-name" required>
+                   <div> 
+                    <label>NAME</label>
+                    <input name="full-name" id="fullName">
+                    <div class="submit-error" id="fullNameError">Enter your full name</div>
                     <hr>
+                   </div> 
                     
-                    <label for="email"><b>EMAIL</b></label>
-                    <input type="text" name="email" required>
+                   <div>
+                    <label>EMAIL</label>
+                    <input name="email" id="email">
+                    <div class="submit-error" id="emailError">Enter your email address</div>
                     <hr>
-      
-                    <label for="psw"><b>PASSWORD</b></label>
-                    <input type="password" name="psw" required>
+                   </div>
+
+                   <div>
+                    <label>PASSWORD</label>
+                    <input name="psw" id="passWord">
+                    <div class="submit-error" id="passWordError">Must be at least 8 characters</div>
                     <hr>
-      
-                    <label for="psw-repeat"><b>REPEAT PASSWORD</b></label>
-                    <input type="password" name="psw-repeat" required>
+                   </div>
+
+                   <div>
+                    <label>REPEAT PASSWORD</label>
+                    <input name="psw-repeat" id="passWordRepeat"/>
+                    <div class="submit-error" id="passWordRepeatError">Write your password again</div>
                     <hr>
-      
+                   </div>
+
+                  <button type="submit">Submit</button>
+                </form>
       
                 </div>
-            </form>
+            
         </div>
         <div class="main2">
-            <form action="action-page.php">
+
                 <div class="formcontainer">
+                  <form id="signUpFormAlt">
                     <h1>Please fill in this form.</h1>
                     <hr>
-      
-                    <label for="full-name"><b>NAME</b></label>
-                    <input type="name" name="full-name" required>
+
+                    <div>
+                    <label>NAME</label>
+                    <input name="full-name" id="fullNameAlt"/>
+                    <div class="submit-error" id="fullNameAltError">Enter your full name</div>
                     <hr>
+                  </div>
                     
-                    <label for="email"><b>EMAIL</b></label>
-                    <input type="text" name="email" required>
+                  <div>
+                    <label>EMAIL</label>
+                    <input name="email" id="emailAlt"/>
+                    <div class="submit-error" id="emailAltError">Enter your email address</div>
                     <hr>
-      
-                    <label for="psw"><b>PASSWORD</b></label>
-                    <input type="password" name="psw" required>
+                  </div>
+
+                  <div>
+                    <label>PASSWORD</label>
+                    <input name="psw" id="passWordAlt"/>
+                    <div class="submit-error" id="passWordAltError">Must be at least 8 characters</div>
                     <hr>
-      
-                    <label for="psw-repeat"><b>REPEAT PASSWORD</b></label>
-                    <input type="password" name="psw-repeat" required>
+                  </div>
+
+                  <div>  
+                    <label>REPEAT PASSWORD</label>
+                    <input name="psw-repeat" id="passWordRepeatAlt"/>
+                    <div class="submit-error" id="passWordRepeatAltError">Write your password again</div>
                     <hr>
-      
+                  </div>
+
+                  <button type="submit">Submit</button>
+                </form>
       
                 </div>
             </form>
         </div>
         <div class="main3"></div>
-        <div class="under1">
-            <a href="menu.html"><button type="submit" class="signupbtn">Sign Up</button></a>
-        </div>
-        <div class="under2">
-            <a href="menu.html"><button type="submit" class="signupbtn">Sign Up</button></a>
-        </div>
+        <div class="under1"></div>
+        <div class="under2"></div>
         <div class="under3"></div>
       </div>
 
@@ -108,5 +134,8 @@
       
       </div>
     </main>
+    <script src="components/errorDisplay.js"></script>
+    <script src="js/signUp.js"></script>
+    <script src="js/signUpAlt.js"></script>
   </body>
 </html>

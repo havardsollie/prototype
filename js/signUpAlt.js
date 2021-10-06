@@ -8,6 +8,7 @@ const passwordAlt = document.querySelector("#passWordAlt");
 const passwordAltError = document.querySelector("#passWordAltError");
 const repeatAlt = document.querySelector("#passWordRepeatAlt");
 const repeatAltError = document.querySelector("#passWordRepeatAltError");
+const buttonAlt = document.querySelector("#submitAlt");
 
 function formValidation(event) {
     event.preventDefault();
@@ -29,12 +30,6 @@ function formValidation(event) {
     } else {
         passwordAltError.style.display = "block";
     }
-
-    if (pwdValidation(repeatAlt.value) === true) {
-        repeatAltError.style.display = "none";
-    } else {
-        repeatAltError.style.display = "block";
-    }
 };
 
 formAlt.addEventListener("submit", formValidation);
@@ -49,16 +44,29 @@ function lengthValidation(value, len) {
 
 function emailValidation(emailAlt) {
     const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(email);
+    const patternMatches = regEx.test(emailAlt);
     return patternMatches;
 }
 
 function pwdCheck() {
-    if (passwordAlt.value == repeatAlt.value) {
-        repeatAltError.style.display = "none";
-        document.querySelector("submit").disabled = false;
+    if (passwordAlt.value === repeatAlt.value) {
+        repeatAlt.setCustomValidity('');
     } else {
-        repeatAltError.style.display = "block";
-        document.querySelector("submit").disabled = true;
+        repeatAlt.setCustomValidity("Passwords dont match");
     }
 } 
+
+passwordAlt.onchange = pwdCheck;
+repeatAlt.onkeyup = pwdCheck;
+
+function enableButton() {
+    if (fullNameAlt.value === "" && regEx.test(emailAlt.value) && passwordAlt.value === "" && repeatAlt.value === "") {
+        buttonAlt.disabled = true;
+        message.style.display = "none";
+    } else {
+        buttonAlt.disabled = false;
+        message.style.display = "block";
+    }
+}
+
+fullNameAlt, emailAlt, passwordAlt, repeatAlt.addEventListener("change", enableButton);

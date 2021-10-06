@@ -27,35 +27,49 @@
        
               
       <div class="grid-container">
-        <div class="header"></div>
-        <div class="footer"></div>
-        <div class="top1"></div>
-        <div class="top2"></div>
-        <div class="top3"></div>
-        <div class="main1"></div>
-        <div class="main2"></div>
-        <div class="main3"></div>
-        <div class="under1"></div>
-        <div class="under2">
-          <div class="logincontainer">
-            <label for="full-name"><b>EMAIL</b></label>
-            <input type="name" name="full-name" required>
-            <hr>
-          
-            <label for="email"><b>PASSWORD</b></label>
-            <input type="text" name="email" required>
-            <hr>
-    
-          </div>
-    
-          
-        <div class="button">
-            <a href="menu.html" class="btn">ENTER</a>
+        <div class="header">
+          <nav> 
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              
+            </ul>
+          </nav>
         </div>
-        <div class="under3"></div>
-      </div>
+        <div class="main1"></div>
+       <div class="under2">
+          <div class="logincontainer">
+            <form id="loginForm">
+            
+          <div>
+            <label><b>EMAIL</b></label>
+            <input type="text" name="email" id="email">
+            <div class="submit-error" id="emailError">Enter your email address</div>
+          </div>
 
+          <div>
+            <div class="submit-message" id="submitMessage">Ok!</div>
+          </div>
+            
+          <div>
+            <label><b>PASSWORD</b></label>
+            <input type="text" name="email" id="password">
+            <div class="submit-error" id="passwordError">Must be at least 8 characters</div>  
+          </div>
+
+          <div>  
+          <button type="submit" id="submit">Check</button>
+          </div>
+          
+          <div class="access">
+            <a href="menu.html">Log In</a>
+          </div>
+
+            </form>
+          </div>
+        </div>
       </div>
     </main>
+    <script src="components/errorDisplay.js"></script>
+    <script src="js/logIn.js"></script>
   </body>
 </html>

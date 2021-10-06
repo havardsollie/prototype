@@ -122,4 +122,9 @@ hr{
     color: red;
 }
 
+.submit-message{
+    display: none;
+    color: green;
+}
+
 

@@ -8,6 +8,8 @@ const password = document.querySelector("#passWord");
 const passwordError = document.querySelector("#passWordError");
 const repeat = document.querySelector("#passWordRepeat");
 const repeatError = document.querySelector("#passWordRepeatError");
+const button = document.querySelector("#submit");
+const message = document.querySelector("#submitMessage");
 
 function formValidation(event) {
     event.preventDefault();
@@ -29,12 +31,6 @@ function formValidation(event) {
     } else {
         passwordError.style.display = "block";
     }
-
-    if (pwdValidation(repeat.value) === true) {
-        repeatError.style.display = "none";
-    } else {
-        repeatError.style.display = "block";
-    }
 };
 
 form.addEventListener("submit", formValidation);
@@ -53,10 +49,28 @@ function emailValidation(email) {
     return patternMatches;
 }
 
-function pwdValidation() {
-    if (repeat === password) {
-        return true;
+function pwdCheck() {
+    if (repeat.value === password.value) {
+        repeat.setCustomValidity('');
     } else {
-        return false;
+        repeat.setCustomValidity("The passwords dont match");
+        ;
     }
+} 
+
+password.onchange = pwdCheck;
+repeat.onkeyup = pwdCheck;
+
+function enableButton() {
+    if (fullName.value === "" && regEx.test(email.value) && password.value === "" && repeat.value === "") {
+        button.disabled = true;
+        message.style.display = "none";
+     } else {
+        button.disabled = false;
+        message.style.display = "block";
 }
+
+}
+
+fullName, email, password, repeat.addEventListener("change", enableButton);
+

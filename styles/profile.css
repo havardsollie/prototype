@@ -104,6 +104,10 @@ i{
     margin-top: 50px;
 }
 
+.under1 i:hover, .under3 i:hover{
+    font-size: 40px;
+}
+
 .under1 em, .under3 em{
     text-align: center;
     margin-top: 10px;

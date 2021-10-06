@@ -89,4 +89,10 @@
 
 a{
     color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    transition: 0.5s ease;
 }

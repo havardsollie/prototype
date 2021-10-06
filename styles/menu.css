@@ -69,10 +69,15 @@ i{
 }
 
 .main1 a, .main2 a, .main3 a, .under1 a, .under2 a, .under3 a{
-    font-size: 11px;
+    font-size: 9px;
     padding: 15px;
-    color: yellow;
+    color: coral;
     text-decoration: none;
+}
+
+.main1 a:hover, .main2 a:hover, .main3 a:hover, .under1 a:hover, .under2 a:hover, .under3 a:hover{
+    font-size: 11px;
+    transition: 0.5s ease;
 }
   
 .footer{ 
@@ -127,6 +132,11 @@ i{
     text-decoration: none;  
 }
 
+.main1 a:hover, .main2 a:hover, .main3 a:hover, .under1 a:hover, .under2 a:hover, .under3 a:hover{
+    font-size: 17px;
+    transition: 0.5s ease;
+}
+
 }
 
 /* pad */
@@ -142,6 +152,11 @@ i{
 .main1 a, .main2 a, .main3 a, .under1 a, .under2 a, .under3 a{
     font-size: 20px;
     padding: 40px;
+}
+
+.main1 a:hover, .main2 a:hover, .main3 a:hover, .under1 a:hover, .under2 a:hover, .under3 a:hover{
+    font-size: 22px;
+    transition: 0.5s ease;
 }
 
 }

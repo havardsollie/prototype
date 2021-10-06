@@ -104,10 +104,6 @@ i{
     color: coral;
     text-decoration: none;
 }
-
-.under2 h1:hover{
-    font-size: 32px;
-}
   
 .under3{
     grid-area: under3;

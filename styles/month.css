@@ -135,6 +135,11 @@ i{
     text-decoration: none;
 }
 
+.under1 em:hover, .under2 em:hover, .under3 em:hover{
+    font-size: 32px;
+    transition: 0.5s ease;
+}
+
 /* pad */
 @media screen and (min-width: 960px){
 
@@ -149,6 +154,11 @@ i{
     color: coral;
     font-size: 35px;
     text-decoration: none;
+}
+
+.under1 em:hover, .under2 em:hover, .under3 em:hover{
+    font-size: 37px;
+    transition: 0.5s ease;
 }
 
 .under1, .under2, .under3{

@@ -102,6 +102,11 @@ i{
 .under2 h1{
     font-size: 30px;
     color: coral;
+    text-decoration: none;
+}
+
+.under2 h1:hover{
+    font-size: 32px;
 }
   
 .under3{

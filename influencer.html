@@ -29,7 +29,8 @@
         <div class="header">
             <nav>
               <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-              <input type="checkbox" id="hamburger-menu">  
+              <input type="checkbox" id="hamburger-menu"> 
+              <label for="basket" id="basket"><a href="cart.html"><i class="fas fa-shopping-basket"></i></a></label> 
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="menu.html">Menu</a></li>
@@ -66,10 +67,12 @@
             <h2>Pay-per-view</h2>
             <hr>
             <p>10$</p>
-             <a href="10.html" class="btn">PAY AND WATCH</a>
+             <button class="addButton" type="button" id="addButton">ADD TO BASKET</button>
+             <div class="feedback"></div>
           </div>
       </div>  
       </div>
     </main>
+    <script src="js/basket.js"></script>
   </body>
 </html>

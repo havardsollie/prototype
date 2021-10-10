@@ -6,11 +6,13 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr;
+    grid-template-rows: 0.4fr 2fr 1.4fr 1.4fr 1.4fr 1.4fr;
     gap: 0px 0px;
     grid-template-areas:
       "header header header"
       "main1 main1 main1"
+      "under2 under2 under2"
+      "under2 under2 under2"
       "under2 under2 under2"
       "under2 under2 under2"
       "under2 under2 under2";
@@ -64,35 +66,67 @@
     background: #4B396F;
 }
 
-.logincontainer{
-    text-align: center;
-    padding: 40px;
-    line-height: 40px;
+.cart-items{
+    display: block;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+hr{
+    margin: 20px;
+}
+
+.cart-row{
+    display: inline;
+}
+
+.cart-item{
+    width: 50%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    margin-left: 160px;
     color: white;
 }
 
-.submit-error{
-    display: none;
-    color: red;
-    font-size: 10px;
+.cart-item-title {
+    margin-left: 40px;
+    font-size: 1.2em;
+    color: coral;
 }
 
-.submit-message{
-    display: none;
-    color: green;
+.cart-item-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.access{
-    border: 1px solid white;
+.btn-click{
+    color: black;
+    border: none;
+    border-radius: .3em;
+    font-weight: lighter;
+    margin-left: 140px;
     margin-top: 20px;
 }
 
-a{
-    color: white;
-    text-decoration: none;
+.btn-click:hover{
+    color: coral;
 }
 
-a:hover{
-    color: black;
-    transition: 0.5s ease;
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: yellow;
+}
+
+.cart-total-title{
+    margin-right: 20px;
 }

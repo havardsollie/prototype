@@ -6,14 +6,14 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    grid-template-rows: 0.4fr 1.4fr 1.4fr 0.4fr 2fr;
     gap: 1px 0px;
     grid-template-areas:
       "header header header"
       "main1 main1 main1"
       "main1 main1 main1"
-      "under1 under2 under3"
-      "footer footer footer";
+      "main1 main1 main1"
+      "under1 under2 under3";
     height: 100vh;
     width: 100vw;
 }
@@ -97,7 +97,7 @@ i{
 
 .result img{
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 .result h1{
@@ -114,8 +114,11 @@ i{
   
 .under1{
     grid-area: under1;
-    font-size: 9px;
-    line-height: 30px; 
+    line-height: 30px;
+}
+
+.em{
+    font-size: 10px;
 }
   
 .under2{
@@ -155,13 +158,19 @@ i{
 
 @media screen and (max-width: 800px) {
 
-.under2 { 
+.under1, .under2 { 
     font-size: 60%; 
 }
 
 @media screen and (max-width: 960px) {
 
+    .em{
+        font-size: 60px;
+    }
 
+    .under1{
+        line-height: 60px;
+    }
 
 }
 
@@ -178,4 +187,5 @@ i{
     left: 78%;
 }
 
+}
 }

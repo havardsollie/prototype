@@ -12,10 +12,11 @@ async function getData(url) {
         <a href="movie.html?id=${data.id}" class="movie">
             <div class="product">
                 <h2>${data.name}</h2>
-                <hr>
                 <img src="${data.images[0].src}" alt="${data.name}"
         </div>
-        </a>`
+        </a>
+        <div class="info">
+            <p>${data.short_description}</a>`
         
     })
 }

@@ -1,4 +1,6 @@
 const moviePage = document.querySelector(".main1");
+const underSection = document.querySelector(".under1");
+const underSectionTwo = document.querySelector(".under2");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -22,11 +24,16 @@ function createHTML(details) {
     moviePage.innerHTML += 
             `<div class="result">
             <h1>${details.name}</h1>
-            <em>${details.short_description}</em>
-            <hr>
-            <p>$ ${details.price}</p>
-            <hr>
             <img src="${details.images[0].src}" alt="${details.name}" />
             </div>`
-}
+    
+    underSection.innerHTML +=
+            `<em>${details.short_description}</em>
+            <hr>
+            `
 
+    underSectionTwo.innerHTML +=
+            `<p>$ ${details.prices.regular_price}</p>
+            <hr>`
+    
+}

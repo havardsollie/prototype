@@ -1,29 +1,32 @@
 const moviePage = document.querySelector(".main1");
-const queryString = document.location.search.substring(1);
+const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+console.log(id);
 
 const url = "https://www.squareeyes.one/wp-json/wc/store/products/" + id;
 
-async function goToMovie(url) {
+async function goToMovie() {
 
         const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);   
+        const details = await response.json();
+        console.log(details);
+        createHTML(details);
+        
 }  
 
 
-goToMovie(url);
+goToMovie();
 
-function createHTML(data) {
-
-    moviePage.innerHTML = 
-    `<div class="result">
-    <h1>${data.name}</h1>
-    <em>${data.short_description}</em>
-    <hr>
-    <p>$ ${data.price}</p>
-    <hr>
-    <img src="${data.image[0].src}" alt="${data.name}" />
-    </div>`
+function createHTML(details) {
+    moviePage.innerHTML += 
+            `<div class="result">
+            <h1>${details.name}</h1>
+            <em>${details.short_description}</em>
+            <hr>
+            <p>$ ${details.price}</p>
+            <hr>
+            <img src="${details.images[0].src}" alt="${details.name}" />
+            </div>`
 }
+

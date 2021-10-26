@@ -12,8 +12,8 @@
     grid-template-areas:
       "header header header"
       "top1 top2 top3"
-      "main1 main2 main3"
-      "under1 under2 under3"
+      "main1 main1 main1"
+      "main1 main1 main1"
       "footer footer footer";
 }
   
@@ -101,38 +101,31 @@ i{
   
 .top2{
     grid-area: top2;
+    background-image: url(/images/menu.png);
 
 }
   
 .main1{ 
     grid-area: main1;
-
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.main2{
-    grid-area: main2;
+.product{
+    padding: 10px;
+    
+}
 
+h2{
+    color: #4B396F;
+    margin-bottom: 5px;
 }
-  
-.main3{
-    grid-area: main3; 
-  
-}
-  
-.under1{
-    grid-area: under1;
 
+.product img{
+    width: 100%;
+    height: 300px;
 }
-  
-.under2{
-    grid-area: under2;
 
-}
-  
-.under3{
-    grid-area: under3;
-
-}
 
 @media screen and (min-width: 700px){
 
@@ -168,6 +161,10 @@ i{
 .main1 a:hover, .main2 a:hover, .main3 a:hover, .under1 a:hover, .under2 a:hover, .under3 a:hover{
     font-size: 22px;
     transition: 0.5s ease;
+}
+
+.main1{
+    display: grid;
 }
 
 }

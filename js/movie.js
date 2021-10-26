@@ -16,14 +16,14 @@ async function goToMovie(url) {
 goToMovie(url);
 
 function createHTML(data) {
-    const moviePage = document.querySelector(".under2");
 
     moviePage.innerHTML = 
-    `
+    `<div class="result">
     <h1>${data.name}</h1>
     <em>${data.short_description}</em>
     <hr>
     <p>$ ${data.price}</p>
     <hr>
-    <img src="${data.image[0].src}" alt="${data.name}" />`
+    <img src="${data.image[0].src}" alt="${data.name}" />
+    </div>`
 }

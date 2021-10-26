@@ -90,6 +90,10 @@ i{
     grid-area: main1;
 }
 
+.result{
+    display: block;
+}
+
 .under1, .under2, .under3{
     background: #4B396F;
     text-align: center;

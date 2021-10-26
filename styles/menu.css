@@ -101,37 +101,37 @@ i{
   
 .top2{
     grid-area: top2;
-    background-image: url(/images/menu.png);   
+
 }
   
 .main1{ 
     grid-area: main1;
-    background-image: url(/images/aircraft.jpg);
+
 }
 
 .main2{
     grid-area: main2;
-    background-image: url(/images/landcape.jpg); 
+
 }
   
 .main3{
     grid-area: main3; 
-    background-image: url(/images/mountain-range.jpg);   
+  
 }
   
 .under1{
     grid-area: under1;
-    background-image: url(/images/moon.jpg);
+
 }
   
 .under2{
     grid-area: under2;
-    background-image: url(/images/pandemic.jpg);
+
 }
   
 .under3{
     grid-area: under3;
-    background-image: url(/images/child.jpg);
+
 }
 
 @media screen and (min-width: 700px){

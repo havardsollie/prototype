@@ -102,7 +102,13 @@ i{
 .top2{
     grid-area: top2;
     background-image: url(/images/menu.png);
+}
 
+.categories{
+    margin: 20px;
+    display: inline;
+    padding: 20px;
+    line-height: 40px;
 }
   
 .main1{ 
@@ -127,7 +133,12 @@ h2{
 
 .info{
     margin-top: 20px;
+    margin-bottom: 20px;
     color: white;
+}
+
+.info p{
+    margin-top: 10px;
 }
 
 
@@ -143,6 +154,11 @@ h2{
 .main1 a:hover, .main2 a:hover, .main3 a:hover, .under1 a:hover, .under2 a:hover, .under3 a:hover{
     font-size: 17px;
     transition: 0.5s ease;
+}
+
+.categories{
+    font-size: 1.2em;
+    
 }
 
 /* pad */
@@ -171,6 +187,12 @@ h2{
 
 .info{
     margin-top: 200px;
+    font-size: 1.2em;
+}
+
+hr{
+    color: black;
+    margin: 20px;
 }
 
 }

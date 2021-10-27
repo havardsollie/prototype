@@ -103,18 +103,24 @@ i{
 .result h1{
     color: coral;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .under1, .under2, .under3{
     background: #4B396F;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     color: white;
 }
   
 .under1{
     grid-area: under1;
-    line-height: 30px;
+    line-height: 40px;
+}
+
+h2{
+    display: inline;
+    color: coral;
 }
 
 .em{

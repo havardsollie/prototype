@@ -28,12 +28,18 @@ function createHTML(details) {
             </div>`
     
     underSection.innerHTML +=
-            `<em>${details.short_description}</em>
+            `<h2>About</h2>
+            <p>${details.tags[0].name}</p>
             <hr>
+            <p>${details.tags[1].name}</p>
+            <hr>
+            <p>${details.tags[2].name}</p>
             `
 
     underSectionTwo.innerHTML +=
-            `<p>$ ${details.prices.regular_price}</p>
+            `<h2>$ ${details.prices.regular_price}</h2>
+            <hr>
+            <em>${details.short_description}</em>
             <hr>`
     
 }

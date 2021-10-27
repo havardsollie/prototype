@@ -1,6 +1,6 @@
 const baseUrl = "https://www.squareeyes.one/wp-json/wc/store/products/";
 const dataSection = document.querySelector(".main1");
-const categories = document.querySelectorAll(".categories");
+const categories = document.querySelectorAll(".category");
 
 async function getData(url) {
     const response = await fetch(url);
@@ -18,8 +18,9 @@ async function getData(url) {
         </div>
         </a>
         <div class="info">
-            <p>${data.short_description}</a>
-            <p>${data.prices.regular_price}</p>`     
+            <h3>${data.short_description}</h3>
+            <hr>
+            <p>$ ${data.prices.regular_price}</p>`     
     })
 }
 

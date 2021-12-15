@@ -6,10 +6,9 @@
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.4fr 1fr 2.2fr 0.4fr 0.4fr;
+    grid-template-rows: 1fr 2.2fr 0.4fr 0.4fr;
     gap: 2px 2px;
     grid-template-areas:
-      "header header header"
       "top1 top2 top3"
       "main1 main2 main3"
       "under1 under2 under3"
@@ -23,17 +22,9 @@
     background: #4B396F 
 }
 
-.header ul{
-    text-align: center;
-    margin-top: 20px;
-    color: #fff;
-    
-}
-
-
 .header ul li{
-    display: inline;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 30px;
     font-size: 15px;
 }

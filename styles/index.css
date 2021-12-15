@@ -6,10 +6,9 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr;
     gap: 0px 0px;
     grid-template-areas:
-      "header header header"
       "main1 main1 main1"
       "main1 main1 main1"
       "main1 main1 main1"
@@ -27,14 +26,12 @@
     display: none;    
 }
 
-
 .header ul li{
-    display: inline;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     font-size: 15px;
-    padding: 30px;
+    padding: 10px;
 }
-
 
 .header ul  li  a{
     color: #ffffff;
@@ -103,11 +100,10 @@ i{
 /* pad */
 @media screen and (min-width: 960px){
 
-.header ul li{
-    display: inline;
-    text-align: center;
-    font-size: 15px;
-    padding: 40px;
+#hamburger-menu:checked ~ ul{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 40px;
 }
 
 .main1{
@@ -134,11 +130,8 @@ i{
 @media screen and (min-width: 1200px){
 
 .header ul li{
-    display: inline;
-    text-align: center;
     font-size: 20px;
-    padding: 100px;
-    }
+}
 
 .button{
     margin-top: 100px;

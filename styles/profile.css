@@ -6,10 +6,9 @@
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.4fr 1.4fr 1.6fr 1.2fr 0.4fr;
+    grid-template-rows: 1.4fr 1.6fr 1.2fr 0.4fr;
     gap: 0px 1px;
     grid-template-areas:
-      "header header header"
       "top1 top1 top1"
       "main1 main1 main1"
       "under1 under3 under3"
@@ -29,8 +28,8 @@
 
 
 .header ul li{
-    display: inline;
-    text-align: center;
+    display: block;
+    text-align: left;
     font-size: 15px;
     padding: 30px;
 }
@@ -53,8 +52,6 @@
 
 #hamburger-menu:checked ~ ul{
    display: block;
-   text-align: left;
-   line-height: 40px;
 }
 
 #basket{
@@ -136,20 +133,18 @@ i{
 /* pad */
 @media screen and (min-width: 960px){
 
-.header ul li{
-    display: inline;
-    text-align: center;
-    font-size: 15px;
-    padding: 40px;
+#hamburger-menu:checked ~ ul{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 40px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.4fr 1.2fr 1.6fr 1.2fr 0.4fr;
+    grid-template-rows: 1.2fr 1.6fr 1.2fr 0.4fr;
     gap: 0px 1px;
     grid-template-areas:
-      "header header header"
       "top1 top1 top1"
       "main1 main2 main2"
       "under1 under3 under3"
@@ -171,19 +166,15 @@ i{
 @media screen and (min-width: 1200px){
 
 .header ul li{
-    display: inline;
-    text-align: center;
     font-size: 20px;
-    padding: 100px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
-    grid-template-rows: 0.4fr 1.2fr 1.6fr 1.2fr 0.4fr;
+    grid-template-rows: 1.2fr 1.6fr 1.2fr 0.4fr;
     gap: 0px 1px;
     grid-template-areas:
-      "header header header"
       "top1 top1 top1"
       "main1 main2 main2"
       "under1 under3 under3"

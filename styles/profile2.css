@@ -5,7 +5,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1.8fr 1.2fr;
+    grid-template-columns: 1.5fr 1.5fr;
     grid-template-rows: 1.4fr 1.8fr 1fr 0.4fr;
     gap: 0px 1px;
     grid-template-areas:
@@ -106,20 +106,25 @@ i{
   
 .main3{
     grid-area: main3;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     text-align: center;
-    font-size: 20px;    
+    font-size: 10px; 
+}
+
+.main3 h3 {
+    font-size: 30px;
+    color: rgb(197, 137, 24);
 }
 
 .product {
-
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .product img {
-    width: 300px;
-    height: 200px;
+    width: 120px;
+    height: 60px;
 }
 
   
@@ -127,13 +132,12 @@ i{
     grid-area: under1;
     background: rgb(197, 137, 24);
     text-align: center; 
-    padding: 50px;
-    line-height: 30px;
 }
 
 .under1 i, .under3 i{
-    font-size: 35px;
-    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
     color: white;
     margin-top: 50px;
 }
@@ -175,7 +179,7 @@ h1{
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1.2fr 2fr 0.8fr 0.4fr;
+    grid-template-rows: 1.2fr 2fr 0.4fr 0.4fr;
     gap: 0px 1px;
     grid-template-areas:
         "top1 top1 top1"
@@ -186,12 +190,9 @@ h1{
     width: 100vw;
 }
 
-.main3 {
-    flex-direction: row;
-}
-
-.product {
-    flex: 1;
+.product img {
+    width: 300px;
+    height: 150px;
 }
 
 }

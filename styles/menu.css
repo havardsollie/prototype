@@ -154,7 +154,11 @@ h2{
 
 .categories{
     font-size: 1.2em;
-    
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
 }
 
 /* pad */

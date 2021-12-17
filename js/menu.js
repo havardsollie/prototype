@@ -6,7 +6,6 @@ async function getData(url) {
     const response = await fetch(url);
     const data = await response.json();
 
-    const movie = data;
     console.log(data);
 
     data.forEach(function(data) {
